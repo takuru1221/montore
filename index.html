@@ -32,59 +32,31 @@
           <div class="home-section-card">
             <h3>現在の記録</h3>
             <div class="record-grid three">
-              <div class="record-item">
-                <span>ベンチ</span>
-                <strong id="homeBenchText">未記録</strong>
-              </div>
-              <div class="record-item">
-                <span>スクワット</span>
-                <strong id="homeSquatText">未記録</strong>
-              </div>
-              <div class="record-item">
-                <span>デッド</span>
-                <strong id="homeDeadliftText">未記録</strong>
-              </div>
+              <div class="record-item"><span>ベンチ</span><strong id="homeBenchText">未記録</strong></div>
+              <div class="record-item"><span>スクワット</span><strong id="homeSquatText">未記録</strong></div>
+              <div class="record-item"><span>デッド</span><strong id="homeDeadliftText">未記録</strong></div>
             </div>
           </div>
 
           <div class="home-section-card">
             <h3>トレーニング</h3>
             <div class="record-grid two">
-              <div class="record-item">
-                <span>今週</span>
-                <strong><span id="weeklyTrainingText">0</span>回</strong>
-              </div>
-              <div class="record-item">
-                <span>累計</span>
-                <strong><span id="totalTrainingText">0</span>回</strong>
-              </div>
+              <div class="record-item"><span>今週</span><strong><span id="weeklyTrainingText">0</span>回</strong></div>
+              <div class="record-item"><span>累計</span><strong><span id="totalTrainingText">0</span>回</strong></div>
             </div>
           </div>
 
           <div class="home-section-card">
             <h3>体重管理</h3>
             <div class="record-grid two">
-              <div class="record-item">
-                <span>現在</span>
-                <strong id="homeCurrentWeightText">未記録</strong>
-              </div>
-              <div class="record-item">
-                <span>目標</span>
-                <strong id="homeTargetWeightText">未設定</strong>
-              </div>
-              <div class="record-item">
-                <span>目標日</span>
-                <strong id="homeTargetDateText">未設定</strong>
-              </div>
-              <div class="record-item">
-                <span>あと</span>
-                <strong id="daysLeftText">未設定</strong>
-              </div>
+              <div class="record-item"><span>現在</span><strong id="homeCurrentWeightText">未記録</strong></div>
+              <div class="record-item"><span>目標</span><strong id="homeTargetWeightText">未設定</strong></div>
+              <div class="record-item"><span>目標日</span><strong id="homeTargetDateText">未設定</strong></div>
+              <div class="record-item"><span>あと</span><strong id="daysLeftText">未設定</strong></div>
             </div>
             <div class="need-box" id="homeNeedPerDayText">目標を設定すると表示されます</div>
           </div>
         </div>
-
         <div class="message-box" id="homeMessage"></div>
       </section>
 
@@ -94,16 +66,11 @@
             <div>Lv. <span id="levelText">1</span></div>
             <div>総合力 <span id="homeTotalPowerText">0</span></div>
           </div>
-
           <div class="train-exp-box">
             <p>経験値 <span id="homeExpText">0 / 100</span></p>
-            <div class="exp-bar">
-              <div id="expFill"></div>
-            </div>
+            <div class="exp-bar"><div id="expFill"></div></div>
           </div>
-
           <p id="nextEvolutionText" class="evo-text">次の進化まであと - Lv</p>
-
           <div class="train-monster-area">
             <img id="trainMonsterImg" class="train-monster-img" src="" alt="相棒モンスター" />
             <p id="trainMonsterName">---</p>
@@ -125,203 +92,101 @@
 
         <div class="status-card">
           <h3>能力値</h3>
-          <div class="status-row">
-            <span>パワー</span>
-            <strong id="powerText">0</strong>
-          </div>
-          <div class="status-row">
-            <span>体力</span>
-            <strong id="staminaText">0</strong>
-          </div>
-          <div class="status-row">
-            <span>回復力</span>
-            <strong id="recoveryText">0</strong>
-          </div>
-          <div class="status-row">
-            <span>継続力</span>
-            <strong id="continuityText">0</strong>
-          </div>
-          <div class="status-row total">
-            <span>総合力</span>
-            <strong id="totalPowerText">0</strong>
-          </div>
+          <div class="status-row"><span>パワー</span><strong id="powerText">0</strong></div>
+          <div class="status-row"><span>体力</span><strong id="staminaText">0</strong></div>
+          <div class="status-row"><span>回復力</span><strong id="recoveryText">0</strong></div>
+          <div class="status-row"><span>継続力</span><strong id="continuityText">0</strong></div>
+          <div class="status-row total"><span>総合力</span><strong id="totalPowerText">0</strong></div>
         </div>
-
         <div class="message-box" id="trainMessage"></div>
       </section>
 
       <section id="battleScreen" class="screen">
         <h2>バトル</h2>
-
         <div class="battle-area">
           <div class="enemy-box">
             <p id="enemyNameText">---</p>
             <img id="enemyImg" class="enemy-img" src="" alt="敵モンスター" />
-            <div class="hp-bar">
-              <div id="enemyHpFill"></div>
-            </div>
+            <div class="hp-bar"><div id="enemyHpFill"></div></div>
           </div>
-
           <div class="vs-text">VS</div>
-
           <div class="player-box">
             <p id="battlePlayerName">---</p>
             <img id="battlePlayerImg" class="battle-player-img" src="" alt="自分のモンスター" />
-            <div class="hp-bar">
-              <div id="playerHpFill"></div>
-            </div>
+            <div class="hp-bar"><div id="playerHpFill"></div></div>
           </div>
         </div>
-
         <div class="battle-info">
           <p>現在の敵：<span id="currentEnemyInfo">---</span></p>
           <p>勝利総合値目安：<span id="requiredPowerText">---</span></p>
           <p>今日のバトル：<span id="todayBattleText">0</span> / 2</p>
         </div>
-
         <button id="battleBtn" class="big-btn">バトルする</button>
-
         <div class="message-box" id="battleMessage"></div>
       </section>
 
       <section id="otherScreen" class="screen other-scroll">
         <h2>その他</h2>
-
-        <div class="settings-card">
-          <h3>サウンド設定</h3>
-          <button id="muteBtn" class="sound-setting-btn">🔊 効果音 ON</button>
-        </div>
-
+        <div class="settings-card"><h3>サウンド設定</h3><button id="muteBtn" class="sound-setting-btn">🔇 音なし版</button></div>
         <div class="settings-card">
           <button class="toggle-card-btn" data-toggle="appIntroContent">アプリ紹介を見る</button>
-
-          <div id="appIntroContent" class="toggle-content hidden">
-            <div class="app-intro">
-              <p>モントレは、すべてのトレーニーに向けて作った筋トレ育成アプリです。</p>
-              <p>筋トレ、食事、睡眠など、現実での行動を記録することで、相棒モンスターも一緒に成長していきます。</p>
-              <p>毎日の小さな努力をゲーム感覚で積み重ねながら、モンスターと一緒に強くなっていきましょう。</p>
-              <p>モントレを使ってモチベーションを高め、理想の自分を目指してトレーニングを続けよう！</p>
-            </div>
-          </div>
+          <div id="appIntroContent" class="toggle-content hidden"><div class="app-intro">
+            <p>モントレは、すべてのトレーニーに向けて作った筋トレ育成アプリです。</p>
+            <p>筋トレ、食事、睡眠など、現実での行動を記録することで、相棒モンスターも一緒に成長していきます。</p>
+            <p>毎日の小さな努力をゲーム感覚で積み重ねながら、モンスターと一緒に強くなっていきましょう。</p>
+            <p>モントレを使ってモチベーションを高め、理想の自分を目指してトレーニングを続けよう！</p>
+          </div></div>
         </div>
-
         <div class="settings-card">
           <button class="toggle-card-btn" data-toggle="howtoContent">遊び方を見る</button>
-
-          <div id="howtoContent" class="toggle-content hidden">
-            <div class="howto-list">
-              <p>・筋トレでパワー、体力、継続力が上がる</p>
-              <p>・プロテインでパワー、回復力が上がる</p>
-              <p>・睡眠で回復力、体力が上がる</p>
-              <p>・Lv5、Lv15、Lv30で進化する</p>
-              <p>・バトルは1日2回まで挑戦できる</p>
-              <p>・敵に勝つと背景が解放される</p>
-              <p>・総合力が少し足りなくても、確率で勝てることがある</p>
-              <p>・総合力が少し上回っていても、油断すると負けることがある</p>
-            </div>
-          </div>
+          <div id="howtoContent" class="toggle-content hidden"><div class="howto-list">
+            <p>・筋トレでパワー、体力、継続力が上がる</p><p>・プロテインでパワー、回復力が上がる</p><p>・睡眠で回復力、体力が上がる</p>
+            <p>・Lv5、Lv15、Lv30で進化する</p><p>・バトルは1日2回まで挑戦できる</p><p>・敵に勝つと背景が解放される</p>
+            <p>・総合力が少し足りなくても、確率で勝てることがある</p><p>・総合力が少し上回っていても、油断すると負けることがある</p>
+          </div></div>
         </div>
-
         <div class="settings-card">
           <h3>最大重量</h3>
-
           <div class="max-weight-grid">
-            <label>
-              ベンチプレス
-              <input id="benchInput" type="number" placeholder="例：80" />
-            </label>
-
-            <label>
-              スクワット
-              <input id="squatInput" type="number" placeholder="例：100" />
-            </label>
-
-            <label>
-              デッドリフト
-              <input id="deadliftInput" type="number" placeholder="例：120" />
-            </label>
+            <label>ベンチプレス<input id="benchInput" type="number" placeholder="例：80" /></label>
+            <label>スクワット<input id="squatInput" type="number" placeholder="例：100" /></label>
+            <label>デッドリフト<input id="deadliftInput" type="number" placeholder="例：120" /></label>
           </div>
-
           <button id="saveMaxWeightBtn" class="full-btn">最大重量を保存</button>
         </div>
-
-        <div class="settings-card">
-          <h3>体重記録</h3>
-          <div class="input-row">
-            <input id="weightInput" type="number" step="0.1" placeholder="例：65.5" />
-            <button id="saveWeightBtn">記録</button>
-          </div>
-        </div>
-
-        <div class="settings-card">
-          <button class="toggle-card-btn" data-toggle="weightGraphContent">体重グラフを見る</button>
-
-          <div id="weightGraphContent" class="toggle-content hidden">
-            <canvas id="weightCanvas" width="320" height="150"></canvas>
-          </div>
-        </div>
-
-        <div class="settings-card">
-          <h3>目標設定</h3>
-          <div class="input-row">
-            <input id="targetWeightInput" type="number" step="0.1" placeholder="目標体重" />
-            <input id="targetDateInput" type="date" />
-          </div>
-          <button id="saveTargetBtn" class="full-btn">目標を保存</button>
-        </div>
-
-        <div class="settings-card">
-          <h3>背景解放</h3>
-          <div id="backgroundList" class="badge-list"></div>
-        </div>
-
-        <div class="settings-card">
-          <h3>実績</h3>
-          <div id="achievementList" class="badge-list"></div>
-        </div>
-
+        <div class="settings-card"><h3>体重記録</h3><div class="input-row"><input id="weightInput" type="number" step="0.1" placeholder="例：65.5" /><button id="saveWeightBtn">記録</button></div></div>
+        <div class="settings-card"><button class="toggle-card-btn" data-toggle="weightGraphContent">体重グラフを見る</button><div id="weightGraphContent" class="toggle-content hidden"><canvas id="weightCanvas" width="320" height="150"></canvas></div></div>
+        <div class="settings-card"><h3>目標設定</h3><div class="input-row"><input id="targetWeightInput" type="number" step="0.1" placeholder="目標体重" /><input id="targetDateInput" type="date" /></div><button id="saveTargetBtn" class="full-btn">目標を保存</button></div>
+        <div class="settings-card"><h3>背景解放</h3><div id="backgroundList" class="badge-list"></div></div>
+        <div class="settings-card"><h3>実績</h3><div id="achievementList" class="badge-list"></div></div>
         <div class="settings-card debug-card">
           <button class="toggle-card-btn" data-toggle="debugContent">開発用メニューを見る</button>
-
           <div id="debugContent" class="toggle-content hidden">
             <p class="debug-note">※画像確認・動作確認用です。完成後は消してOKです。</p>
-
-            <div class="debug-button-grid">
-              <button id="debugLv1Btn" type="button">Lv1</button>
-              <button id="debugLv5Btn" type="button">Lv5</button>
-              <button id="debugLv15Btn" type="button">Lv15</button>
-              <button id="debugLv30Btn" type="button">Lv30</button>
-            </div>
-
-            <div class="debug-button-grid">
-              <button id="debugAddExpBtn" type="button">経験値 +100</button>
-              <button id="debugResetDailyBtn" type="button">今日の上限リセット</button>
-              <button id="debugResetBattleBtn" type="button">バトル回数リセット</button>
-            </div>
+            <div class="debug-button-grid"><button id="debugLv1Btn" type="button">Lv1</button><button id="debugLv5Btn" type="button">Lv5</button><button id="debugLv15Btn" type="button">Lv15</button><button id="debugLv30Btn" type="button">Lv30</button></div>
+            <div class="debug-button-grid"><button id="debugAddExpBtn" type="button">経験値 +100</button><button id="debugResetDailyBtn" type="button">今日の上限リセット</button><button id="debugResetBattleBtn" type="button">バトル回数リセット</button></div>
           </div>
         </div>
-
-        <div class="settings-card danger">
-          <h3>データ</h3>
-          <button id="resetBtn" class="danger-btn">データリセット</button>
-        </div>
-
+        <div class="settings-card danger"><h3>データ</h3><button id="resetBtn" class="danger-btn">データリセット</button></div>
         <div class="message-box" id="otherMessage"></div>
       </section>
     </main>
 
     <nav id="bottomNav" class="bottom-nav hidden">
-      <button data-screen="homeScreen" class="nav-btn active">ホーム</button>
-      <button data-screen="trainScreen" class="nav-btn">育成</button>
-      <button data-screen="battleScreen" class="nav-btn">バトル</button>
-      <button data-screen="otherScreen" class="nav-btn">その他</button>
+      <button data-screen="homeScreen" class="nav-btn active">ホーム</button><button data-screen="trainScreen" class="nav-btn">育成</button><button data-screen="battleScreen" class="nav-btn">バトル</button><button data-screen="otherScreen" class="nav-btn">その他</button>
     </nav>
 
     <div id="eventModal" class="event-modal hidden">
-      <div class="event-modal-card">
-        <div id="eventModalTitle" class="event-modal-title">WIN!</div>
-        <div id="eventModalBody" class="event-modal-body"></div>
-        <button id="eventModalCloseBtn" class="event-modal-btn">OK</button>
+      <div class="event-modal-card"><div id="eventModalTitle" class="event-modal-title">WIN!</div><div id="eventModalBody" class="event-modal-body"></div><button id="eventModalCloseBtn" class="event-modal-btn">OK</button></div>
+    </div>
+
+    <div id="tutorialModal" class="tutorial-modal hidden">
+      <div class="tutorial-card">
+        <h2>モントレへようこそ！</h2>
+        <p>モントレは、筋トレ・食事・睡眠の記録でモンスターを育成するWebアプリです。</p>
+        <p>育成画面で日々の行動を記録すると、能力値が上がり、レベルアップや進化、バトルを楽しめます。</p>
+        <p>まずは相棒モンスターを選んで、今日のトレーニングを記録してみよう！</p>
+        <button id="tutorialCloseBtn" type="button" onclick="closeTutorial()">はじめる</button>
       </div>
     </div>
   </div>
